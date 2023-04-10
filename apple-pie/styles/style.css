@@ -22,3 +22,116 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+
+.header{
+  background-image: url(labs/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg);
+}
+
+ol {
+  /* 1. Remove the default list style */  
+  list-style: none;
+}
+
+ol > li {
+  /* 2. Create a custom list counter */  
+  counter-increment: listcounter;
+}
+
+ol > li::before {
+  /*3. Set the new style for the list markers */
+  content: counter(listcounter) ") ";
+}
+
+#cabecera h1{
+  background-image: url('/labs/lab-css-recipes-clone/apple-pie/images/apple-pie.jpg');
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  margin-top: 1px;
+  padding-top: 450px;
+  padding-bottom: 450px;
+  margin-bottom: 80px;
+  max-height: 500px;
+  text-align: center;
+  font-size: 50px;
+  
+}
+
+#intro{
+  margin: 10px 40px 10px 40px;
+  padding: 10px 250px;
+}
+
+#intro img{
+  width: 400px;
+}
+
+#intro div{
+  text-align: center;
+}
+
+#intro p{
+  text-align: justify;
+}
+
+#ingredients{
+  margin: 10px 40px 10px 40px;
+  
+}
+
+#ingredients h3{
+  margin-bottom: 10px;
+  margin-left: 250px;
+}
+
+#ingredients ul{
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  list-style: none;
+}
+
+#ingredients ul li::before{
+  content: "-";
+  margin-left: 300px;
+}
+
+#ingredients img{
+  width: 320px;
+}
+
+#ingredients div{
+  text-align: center;
+}
+
+#direction{
+  margin: 10px 40px 10px 40px;
+
+}
+
+#directions h3{
+  padding-left: 290px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#directions ol{
+  margin: 0px 300px 100px 350px;
+}
+.img-info{
+  margin-top: 50px;
+  width: 450px;
+  margin-left: 250px;
+  
+}
+
+.img-cook{
+  width: 280px;
+}
+
+.main-img{
+  width: 200px;
+  text-align: center;
+}
